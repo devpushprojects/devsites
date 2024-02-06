@@ -3,9 +3,8 @@ html, body {
 }
 
 body {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 a {
@@ -43,7 +42,6 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px 20px;
   width: 1000px;
-  justify-items: start;
 }
 
 .site {
@@ -64,7 +62,6 @@ img {
   display: flex;
   flex-direction: column;
   width: 200px;
-  padding-left: 40px;
 }
 
 .category {
@@ -75,38 +72,4 @@ img {
 .category:hover {
   cursor: pointer;
   text-decoration: underline; 
-}
-
-@media (width <= 1280px) {
-  body {
-    background-color: red;
-  }
-
-  .sites {
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    max-width: 1000px;
-    justify-items: center;
-  }
-}
-
-@media (width <= 950px) {
-  body {
-    background-color: blue;
-  }
-
-  .sites {
-    grid-template-columns: 1fr;
-    width: 100%;
-    max-width: 1000px;
-  }
-
-  .site {
-    width: auto;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
