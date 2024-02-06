@@ -11,12 +11,12 @@ const initApp = () => {
 
 const addCategoryClickEvents = () => {
   [...document.querySelectorAll('.category')].forEach((el) => {
-      el.addEventListener('click', (event) => {
-          const selectedEl = event.target
-          const category   = selectedEl.getAttribute('data-category')
+    el.addEventListener('click', (event) => {
+      const selectedEl = event.target
+      const category   = selectedEl.getAttribute('data-category')
 
-          filterSites(category)
-      });
+      filterSites(category)
+    });
   });
 }
 
