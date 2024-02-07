@@ -30,10 +30,11 @@ img {
 }
 
 .sites {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px 20px;
   width: 1000px;
+  justify-items: start;
 }
 
 .site {
